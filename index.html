@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Café</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>☕ Coffee Café</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Specials</h2>
+    <div class="menu">
+      <div class="item" onclick="showDetails('Espresso', '₹120', 'espresso.jpg.webp')">
+        <p>Espresso</p>
+      </div>
+      <div class="item" onclick="showDetails('Cappuccino', '₹150', 'cappuccino.jpg.jpg')">
+        <p>Cappuccino</p>
+      </div>
+      <div class="item" onclick="showDetails('Latte', '₹140', 'latte.jpg.jpg')">
+        <p>Latte</p>
+      </div>
+    </div>
+
+    <div id="details" class="details hidden">
+      <h3 id="item-name"></h3>
+      <img id="item-image" src="" alt="Drink image" width="200">
+      <p id="item-price"></p>
+    </div>
+
+    <!-- Optional preview section with all images shown -->
+    <section style="text-align: center; margin-top: 40px;">
+      <h2>Image Previews</h2>
+      <img src="espresso.jpg.webp" alt="Espresso" width="150">
+      <img src="cappuccino.jpg.jpg" alt="Cappuccino" width="150">
+      <img src="latte.jpg.jpg" alt="latte" width="150">
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Coffee Café. All rights reserved.</p>
+  </footer>
+</body>
+</html>
